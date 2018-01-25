@@ -28,7 +28,7 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-![Bingo](/https://i.imgur.com/6MjT81x.gif)
+![Bingo](https://i.imgur.com/6MjT81x.gif)
 
 ### Jekyll Themes
 
