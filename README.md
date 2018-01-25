@@ -23,10 +23,12 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![https://i.imgur.com/6MjT81x.gif](pingu)
+[Link](url) and ![images](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+![https://i.imgur.com/6MjT81x.gif](pingu)
 
 ### Jekyll Themes
 
