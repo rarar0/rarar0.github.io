@@ -53,8 +53,7 @@ Enter a file in which to save the key (~/.ssh/id_rsa) is the path you should use
 Enter passphrase (empty for no passphrase): [Type a passphrase]
 
 Enter same passphrase again: [Type passphrase again]
-```
-  * 3B Once the key has been generated, go to your /home folder open the dropdown menu, and select "show hidden files". Open up .ssh and copy the contents from id_rsa to [the settings page on github](https://github.com/settings/keys)
+```  * 3B Once the key has been generated, go to your /home folder open the dropdown menu, and select "show hidden files". Open up .ssh and copy the contents from id_rsa to [the settings page on github](https://github.com/settings/keys)
 
 * Step 4 Install git through Bash
 
