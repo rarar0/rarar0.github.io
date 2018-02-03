@@ -44,8 +44,7 @@ https://tails.boum.org/doc/about/warning/index.en.html
   
   
 * Step 3 Generate an RSA Key for Github.
-  * 3A I'll refer you to [Hub's own guide](https://help.github.com/articles/connecting-to-github-with-ssh/) on how to generate an SSH key, but here's the command you will want to enter into BASH 
-```
+  * 3A I'll refer you to [Hub's own guide](https://help.github.com/articles/connecting-to-github-with-ssh/) on how to generate an SSH key, but here's the command you will want to enter into BASH ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 Enter a file in which to save the key (~/.ssh/id_rsa) is the path you should use, you may need to enter this manually.
