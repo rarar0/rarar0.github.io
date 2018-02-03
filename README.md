@@ -1,4 +1,4 @@
-### Why Use Tails OS?
+#### Why Use Tails OS?
 
 ```
 amnesia, noun:
@@ -30,14 +30,15 @@ https://tails.boum.org/doc/index.en.html
 
 https://tails.boum.org/doc/about/warning/index.en.html
 
-### How to run SSH for GIT in Tails OS
+#### How to run SSH for GIT in Tails OS
 
-* Step 1
+##* Step 1
 
 You download Tails [The instructions given on the Tails site explain it clearly](https://tails.boum.org/install/). Otherwise, if you would like to clone a copy of tails just ask me how!
 
 
-* Step 2
+
+* ##Step 2
 
 Configure your persistent volume! This will allow you to save your repositories from Github, and also will keep your SSH configuration files.
   * 2A
@@ -56,7 +57,8 @@ Configure your persistent volume! This will allow you to save your repositories 
   
   That's all for step 2! Whenever you boot into Tails now, you will receive a dialog upon booting asking if you would like to use your persistent volume, or the amnesic version that doesn't save anything. When using SSH and GIT you will want to use your persistent volume. **RESTART TAILS AT THIS POINT** Login with your persistent volume and configure an adminstrator password (Press the + in the bottom left)
   
-* Step 3 
+  
+* ##Step 3 
 
 Generate an RSA Key for Github.
 
@@ -78,8 +80,10 @@ Enter same passphrase again: [Type passphrase again]
   * 3B
   
   Once the key has been generated, go to your /home folder open the dropdown menu, and select "show hidden files". Open up .ssh and copy the contents from id_rsa to [the settings page on github](https://github.com/settings/keys)
-  
-* Step 4
+
+
+
+* ##Step 4
 
 Install git through Bash
 
@@ -96,7 +100,9 @@ Install git through Bash
   ```
   This installs git.
   
-* Step 5
+  
+  
+* ##Step 5
 
 Generate config and known_hosts files in your ~/.ssh/ file
 
@@ -108,7 +114,9 @@ touch config
 touch known_hosts
 ```
 
-* Step 6
+
+
+* ##Step 6
 
 Edit your config file to add these two lines
 
@@ -118,7 +126,9 @@ Host github.com
 ```
 There should be 4 spaces before "User git"
 
-* Step 7
+
+
+* ##Step 7
 
 Attempt a clone from your github repository
 
@@ -147,7 +157,9 @@ Attempt a clone from your github repository
     GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no -o MACs=\"hmac-sha2-512-etm@openssh.com,hmac-sha2-512\" -o KexAlgorithms=\"curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256\" -o IdentitiesOnly=yes -o IdentityFile=~/path/to/your/id_rsa" git clone ssh://git@github.com/YourUsername/YourRepository.git
     ```
   
-* Step 8
+  
+  
+* ##Step 8
 
 Once github has been added to your known_hosts file, edit your config file so it looks something like this
 
@@ -166,7 +178,9 @@ Host github.com
 
 ```
 
-* Step 9 
+
+
+* ##Step 9 
 
 You can now securely use git commands through secure shell with Tails OS!
 
