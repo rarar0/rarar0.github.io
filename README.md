@@ -30,7 +30,7 @@ https://tails.boum.org/doc/index.en.html
 
 https://tails.boum.org/doc/about/warning/index.en.html
 
-#### How to run SSH for GIT in Tails OS
+#### How to run SSH for GIT in Tails
 
 - Step 1 You download Tails [The instructions given on the Tails site explain it clearly](https://tails.boum.org/install/). Otherwise, if you would like to clone a copy of tails just ask me how!
 
