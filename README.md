@@ -32,28 +32,24 @@ https://tails.boum.org/doc/about/warning/index.en.html
 
 #### How to run SSH for GIT in Tails OS
 
-* Step 1
+- Step 1
 
 You download Tails [The instructions given on the Tails site explain it clearly](https://tails.boum.org/install/). Otherwise, if you would like to clone a copy of tails just ask me how!
 
 
 
-* Step 2
+- Step 2
 
 Configure your persistent volume! This will allow you to save your repositories from Github, and also will keep your SSH configuration files.
-  * 2A
+  - 2A Once you have logged in for the first time, go to the applications tab in the top left corner, and under the "System Tools" menu, select "Configure persistent volume"
   
-  Once you have logged in for the first time, go to the applications tab in the top left corner, and under the "System Tools" menu, select "Configure persistent volume"
+  - 2B When specifying the files you wish to save, select SSH Client, GNUPG, and dotfiles (And any others you would like to have persisted)
   
-  * 2B
-  
-  When specifying the files you wish to save, select SSH Client, GNUPG, and dotfiles (And any others you would like to have persisted)
-  
-  * 2C
+  - 2C
   
   Create a secure passphrase. You will need to enter this any time you wish to interact with your encrypted files. [An example is Diceware](http://world.std.com/~reinhold/diceware.html)
   
-  * 2End
+  - 2 End
   
   That's all for step 2! Whenever you boot into Tails now, you will receive a dialog upon booting asking if you would like to use your persistent volume, or the amnesic version that doesn't save anything. When using SSH and GIT you will want to use your persistent volume. **RESTART TAILS AT THIS POINT** Login with your persistent volume and configure an adminstrator password (Press the + in the bottom left)
   
