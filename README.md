@@ -48,11 +48,8 @@ https://tails.boum.org/doc/about/warning/index.en.html
   
   ```
   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-
 Enter a file in which to save the key (~/.ssh/id_rsa) is the path you should use, you may need to enter this manually.
-
 Enter passphrase (empty for no passphrase): [Type a passphrase]
-
 Enter same passphrase again: [Type passphrase again]
   ```
   
