@@ -67,9 +67,7 @@ https://tails.boum.org/doc/about/warning/index.en.html
 * Step 5 Generate config and known_hosts files in your ~/.ssh/ file
 ```
 cd ~/.ssh/
-
 touch config
-
 touch known_hosts
 ```
 
@@ -101,7 +99,6 @@ There should be 4 spaces before "User git"
 ```
 #Path to known hosts should be ~/.ssh/known_hosts (By default)
 #Path to id_rsa should be ~/.ssh/id_rsa (By default)
-
 Host github.com
     User git
     MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-512
@@ -110,14 +107,12 @@ Host github.com
     UserKnownHostsFile /path/to/known_hosts 
     IdentitiesOnly yes
     IdentityFile /path/to/id_rsa
-
 ```
 
 * Step 9 You can now securely use git commands through secure shell with Tails OS!
 
 ```
 cd ~/Persistent/Repository
-
 sudo git clone ssh://git@github.com/YourGitUsername/YourRepository.git
 ```
 
