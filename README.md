@@ -85,16 +85,16 @@ There should be 4 spaces before "User git"
   ```
   cd ~/Persistent
   ```
-  * 7B Enter the command 
+  * 7B Enter the command
   ```
   sudo git clone ssh://git@github.com:/YourUsername/YourRepository.git
   ```
   You should get a dialog asking you to add Github to the known hosts file. 
   * 7B (In case you don't get asked to add github to known hosts)
   Try this command instead
-    ```
+  ```
     GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no -o MACs=\"hmac-sha2-512-etm@openssh.com,hmac-sha2-512\" -o KexAlgorithms=\"curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256\" -o IdentitiesOnly=yes -o IdentityFile=~/path/to/your/id_rsa" git clone ssh://git@github.com/YourUsername/YourRepository.git
-    ```
+  ```
   
 * Step 8 Once github has been added to your known_hosts file, edit your config file so it looks something like this
 
